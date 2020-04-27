@@ -664,7 +664,7 @@ window.addEventListener('load', function () {
 
     <!-- Nice-select js-->
     <script src="https://bullrun.live/Content/assets/plugins/jquery-nice-select/js/jquery.nice-select.js"></script>
-    <script src="/Content/assets/plugins/jquery-nice-select/js/nice-select.js"></script>
+    <script src="https://bullrun.live/Content/assets/plugins/jquery-nice-select/js/nice-select.js"></script>
 
     <!-- Apexchart js-->
     <script src="https://bullrun.live/Content/assets/js/apexcharts.js"></script>
@@ -679,7 +679,15 @@ window.addEventListener('load', function () {
     <script src="https://bullrun.live/Content/assets/js/custom.js"></script>
     <!--LOgout Js-->
     
-    <script src="https://bullrun.live/Content/Scripts/LogOut.js"></script>
+    <script> 
+     $(document).ready(function() {
+        $('.logoutuser').click(function () {
+        
+            var account = localStorage.removeItem("address", null);
+            location.href = "https://1dapp.github.io/signin";
+        });
+    });
+    </script>
 </body>
 </html>
 
